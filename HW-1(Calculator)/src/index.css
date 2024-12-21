@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  width: 200px;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+span {
+  background-color: #F4F6FB;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+
+.btn {
+  color: #fff;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: auto;
+  flex:  28%;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease,opacity 0.2s ease;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(.95);
+}
+
+.numbers-btn {
+  background-color: #3C64B1;
+}
+
+.puls-mins {
+  background-color: #F2994A;
+}
+
+.result {
+  width: 100%;
+  background-color: #27AE60;
+  
+}
