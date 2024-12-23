@@ -1,17 +1,17 @@
+import '../../index.css'
 interface IProps{
-  input:string,
-  result:number
+    value:string,
+    result:string
 }
-
 const DisplayResult=(props:IProps)=> {
- 
-  
   return (
-    <div className="resultBox">
-    <span>{props.input}</span> {/* Display the ongoing input */}
-    <span>= {props.result}</span> {/* Display the result */}
-  </div>
-  )
+<>
+<div className='resultBox'>
+    <span> {props.value}</span>
+    <span> {props.result}</span>
+</div>
+</>
+)
 }
 
 export default DisplayResult
