@@ -1,24 +1,38 @@
 * {
   box-sizing: border-box;
 }
-
-.calculator {
-  width: 200px;
-  max-width: 300px;
-  text-align: center;
-  margin: auto;
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #162644;
 }
 
-span {
+.calculator {
+  width: 300px;
+  max-width: 400px;
+  text-align: center;
+  margin:auto;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #567dc7cc;
+/* box-shadow: 0 4px 8px rgba(0,0,0,0.7) */
+}
+.container{
+  display: grid;
+grid-template-columns: repeat(3,1fr );
+}
+.resultBox {
   background-color: #F4F6FB;
   margin-bottom: 10px;
-  padding: 20px;
-  font-size: 25px;
+  padding: 10px;
+  font-size: 45px;
   font-weight: 600;
   width: 100%;
   border-radius: 10px;
   display: inline-block;
-
 }
 
 .btn {
@@ -52,12 +66,15 @@ span {
   background-color: #3C64B1;
 }
 
-.puls-mins {
+.plus-mins {
   background-color: #F2994A;
 }
-
+.reset{
+  background-color: #961212;
+  width: 40%;
+}
 .result {
-  width: 100%;
+  width: 50%;
   background-color: #27AE60;
   
 }
