@@ -1,5 +1,5 @@
 import { ITodo } from "../../type";
-
+import "./style.css"
 interface IProps {
   data: ITodo[];
 }
@@ -9,21 +9,17 @@ const TodoData = (props: IProps) => {
   const done = props.data.filter((data) => data.isDone).length;
   return (
     <div
-    // style={{
-    //   display: "flex",
-    //   alignItems: "center",
-    //   justifyContent: "center",
-    // }}
+    className="Dashboard"
     >
-      <div>
+      <div className="taskInfo">
         <span>{created}</span>
         <b>created task</b>
       </div>
-      <div>
+      <div className="taskInfo">
         <span>{urgent}</span>
         <b>Urgent task</b>
       </div>
-      <div>
+      <div className="taskInfo">
         <span>{done}</span>
         <b>completed task</b>
       </div>

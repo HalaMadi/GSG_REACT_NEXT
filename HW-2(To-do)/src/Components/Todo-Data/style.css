@@ -1,0 +1,22 @@
+.Dashboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-bottom: 1px solid #86A788;
+    border-radius: 10px;
+}
+
+.taskInfo {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFFDEC;
+    width: 100px;
+}
+.taskInfo b {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
