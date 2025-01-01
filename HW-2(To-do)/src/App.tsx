@@ -24,9 +24,9 @@ const App = () => {
   };
   return (
     <>
-      <div className="header">
+      <div className="appComponent" >
         <h1>Todo App </h1>
-        <p>{date.toDateString()}</p>;
+        <p>{date.toDateString()}</p>
         <TaskForm onSubmit={handleNewTask} />
         <TodoData data={taskList} />
         <AllTodos
