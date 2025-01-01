@@ -1,5 +1,6 @@
 import { Trash } from "@phosphor-icons/react";
 import { ITodo } from "../../type";
+import "./style.css"; // Add the CSS here
 
 interface IProps {
   data: ITodo;
@@ -8,24 +9,25 @@ interface IProps {
 }
 
 const TodoItem = ({ data, onToggle, onDelete }: IProps) => {
+  const taskClass = data.isUrgent ? "todoItem urgent" : "todoItem";
   return (
-    <div>
+    <div className={taskClass}>
       <input
         type="checkBox"
         id="completeTask"
         onChange={onToggle}
         data-id={data.id}
       />
-      <span>{data.task}</span>
+      <span className="task">{data.task}</span>
       <span>
         <Trash
-          size={32}
+          size={24}
           color="#910303"
           weight="fill"
           onClick={() => onDelete(data.id)}
+          className="deleteIcon"
         />
       </span>
-      <span>Is Urgent : {data.isUrgent.toString()}</span>
     </div>
   );
 };

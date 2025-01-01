@@ -8,7 +8,7 @@ interface IProps {
 }
 const AllTodos = (props: IProps) => {
   return (
-    <div>
+    <div className="allTodo">
       {props.items.map((item) => (
         <div key={item.id}>
           <TodoItem
